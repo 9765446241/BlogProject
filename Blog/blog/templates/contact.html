@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="col-sm-10">
+    <h3 class="text-White my-5">CONTACT PAGE</h3>
+<form>
+<p style="text-align:center;"></p>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputName">Name</label><br>
+            <input type="text class="form-control" id="inputName">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="inputEmail">Email</label><br>
+            <input type="email" class="form-control" id="inputEmail">
+        </div>
+        <div class="form-group">
+            <label for="inputEmail">Address</label><br>
+            <input type="text" class="form-control" id="inputAddress">
+        </div>
+        <div class="form-group">
+            <label for="massagel">Message</label><br>
+            <textarea class="form-control" id="message" rows="3"></textarea>
+            
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+    </div>
+</form>
+    
+</div>
+
+{% endblock content %}
